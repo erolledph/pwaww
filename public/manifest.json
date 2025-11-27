@@ -2,15 +2,52 @@
   "name": "techipedia! : a tech blogging app",
   "short_name": "techipedia",
   "start_url": "/",
-  "background_color": "#1f2023",
-  "display": "standalone",
   "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
   "theme_color": "#1f2023",
   "description": "best place to learn trendy tech and understanding concepts.",
   "icons": [
     {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
       "src": "/icons/icon-192x192.png",
       "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
       "type": "image/png",
       "purpose": "any"
     },
@@ -27,24 +64,46 @@
       "purpose": "maskable"
     }
   ],
+  "categories": ["productivity", "education"],
   "shortcuts": [
     {
-      "name": "Blogs",
+      "name": "Latest Blogs",
       "short_name": "Blogs",
-      "description": "learn new things",
-      "url": "/"
+      "description": "View all blog posts",
+      "url": "/blog/page/1",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     },
     {
-      "name": "Tags",
+      "name": "Browse Tags",
       "short_name": "Tags",
-      "description": "search blogs by category",
-      "url": "/tags"
+      "description": "Browse posts by tag",
+      "url": "/tags",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     },
     {
-      "name": "About",
+      "name": "About Us",
       "short_name": "About",
-      "description": "Get to know me.",
-      "url": "/about"
+      "description": "Learn more about techipedia",
+      "url": "/about",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }

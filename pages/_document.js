@@ -4,14 +4,31 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png" />
-          <link rel="icon" type="image/png" sizes="48x48" href="/icons/icon-48x48.png" />
-          <link rel="icon" type="image/png" sizes="96x96" href="/icons/icon-96x96.png" />
+          {/* PWA Meta Tags */}
+          <meta name="application-name" content="techipedia" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+          <meta name="apple-mobile-web-app-title" content="techipedia" />
+          <meta
+            name="description"
+            content="best place to learn trendy tech and understanding concepts."
+          />
+          <meta name="format-detection" content="telephone=no" />
+          <meta name="mobile-web-app-capable" content="yes" />
+          <meta name="msapplication-config" content="/browserconfig.xml" />
+          <meta name="msapplication-TileColor" content="#1f2023" />
+          <meta name="msapplication-tap-highlight" content="no" />
+          <meta name="theme-color" content="#1f2023" />
+
+          {/* Icons */}
+          <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-192x192.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-96x96.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-72x72.png" />
           <link rel="manifest" href="/manifest.json" />
-          <link rel="mask-icon" href="/icons/maskable.png" color="#000" />
-          <meta name="msapplication-TileColor" content="#000000" />
-          <meta name="theme-color" content="#000000" />
-          <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+          <link rel="mask-icon" href="/icons/maskable.png" color="#1f2023" />
+          <link rel="shortcut icon" href="/icons/icon-192x192.png" />
+
+          {/* Preconnect to external resources */}
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
@@ -23,7 +40,9 @@ class MyDocument extends Document {
             integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
             crossOrigin="anonymous"
           />
-          <link rel="icon" href="/icons/maskable.png" sizes="any" type="image/png" />
+
+          {/* RSS Feed */}
+          <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         </Head>
         <body className="antialiased text-black bg-white dark:bg-background-color dark:text-white">
           <Main />
