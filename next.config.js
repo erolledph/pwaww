@@ -6,6 +6,7 @@ module.exports = withPWA({
     register: true,
     skipWaiting: true,
     cacheOnFrontEndNav: true,
+    disable: false,
     runtimeCaching: [
       {
         urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
@@ -14,7 +15,7 @@ module.exports = withPWA({
           cacheName: 'google-fonts-cache',
           expiration: {
             maxEntries: 20,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+            maxAgeSeconds: 60 * 60 * 24 * 365,
           },
         },
       },
@@ -25,7 +26,7 @@ module.exports = withPWA({
           cacheName: 'google-fonts-webfont-cache',
           expiration: {
             maxEntries: 20,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+            maxAgeSeconds: 60 * 60 * 24 * 365,
           },
         },
       },
@@ -36,7 +37,7 @@ module.exports = withPWA({
           cacheName: 'cdn-cache',
           expiration: {
             maxEntries: 60,
-            maxAgeSeconds: 60 * 60 * 24 * 30, // 1 month
+            maxAgeSeconds: 60 * 60 * 24 * 30,
           },
         },
       },
