@@ -24,7 +24,10 @@ export const ClientReload = () => {
         })
       })
       socket.on('connect_error', (error) => {
-        console.debug('Socket connection error (this is normal if using npm run dev):', error.message)
+        console.debug(
+          'Socket connection error (this is normal if using npm run dev):',
+          error.message
+        )
       })
       return () => {
         socket.disconnect()
